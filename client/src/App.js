@@ -1,22 +1,14 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import Donuts from "./components/donuts";
 
 function App() {
-  const [data, setData] = React.useState(null);
-
-  React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  }, []);
-
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>{!data ? "Loading..." : data}</p>
+        <h1 className='display-1'>Paradise Donut Company</h1>
       </header>
+      <Donuts />
     </div>
   );
 }
