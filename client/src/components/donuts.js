@@ -18,7 +18,7 @@ class Donut extends React.Component {
         <div className='row d-flex justify-content-center'>
           {this.state.donuts.map(donut => (
             <div className='col-3 d-flex align-items-stretch'>
-              <div className='card' style={{width: "18rem"}}>
+              <div className='card' style="width: 18rem">
               <img src={"https://paradisedonutco376.s3.us-east-2.amazonaws.com/" + donut.img_link} className="card-img-top" />
                 <div className='card-body'>
                   <p className="card-title">
